@@ -5,7 +5,7 @@ const button = document.querySelector('.btn');
 button.addEventListener('click', function() {
 
     // img and btn change on click
-    if(button.innerText == 'Accendi'){
+    if(button.innerText.toLowerCase() == 'accendi'){
         lamp.src = "./img/yellow_lamp.png"; 
         button.innerText = 'Spegni';
     } else {
