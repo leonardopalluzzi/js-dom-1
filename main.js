@@ -3,8 +3,16 @@ const button = document.querySelector('.btn');
 
 // event listener on btn
 button.addEventListener('click', function() {
-    lamp.src = "./img/yellow_lamp.png";
+
+    // img and btn change on click
+    if(button.innerText == 'Accendi'){
+        lamp.src = "./img/yellow_lamp.png"; 
+        button.innerText = 'Spegni';
+    } else {
+        button.innerText = 'Accendi';
+        lamp.src = "./img/white_lamp.png";
+    }
 })
 
-// img and btn change on click
+
 
